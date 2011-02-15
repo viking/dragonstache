@@ -1,0 +1,19 @@
+<h1>New bookmark</h1>
+
+<% f = form_for(@bookmark) %>
+<%= f.start_form %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :href %><br />
+    <%= f.text_field :href %>
+  </p>
+  <p>
+    <%= f.label :description %><br />
+    <%= f.text_field :description %>
+  </p>
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<%= f.end_form %>
+
+<%= link_to 'Back', resource(:bookmarks) %>
