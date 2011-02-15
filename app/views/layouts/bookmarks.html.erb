@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8" /> 
+  <meta name="csrf-param" content="authenticity_token"/>
+  <meta name="csrf-token" content="123"/>
+  <title>Bookmarks: <%= params.action %></title>
+  <%= stylesheet_link_tag 'scaffold' %>
+  <%= stylesheet_link_tag 'http://jqueryui.com/themes/base/jquery.ui.all.css' %>
+  <%= javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" %>
+  <%= javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.2/jquery-ui.min.js" %>
+  <%= javascript_include_tag "jquery.rails.min" %>
+</head>
+<body>
+
+<p style="color: green"><%= flash_notice %></p>
+
+<%= yield_body %>
+
+</body>
+</html>
